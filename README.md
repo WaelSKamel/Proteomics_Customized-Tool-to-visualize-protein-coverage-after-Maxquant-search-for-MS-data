@@ -150,4 +150,4 @@ ggplot( subset(select_col_peptides_melt_aa, Gene.names=="PABPN1" ), aes(x=Amino.
   annotate("segment", x=Inf, xend=Inf, y=-Inf, yend=Inf, color="black",size=0.25, linetype="solid")
 ```
 
-![](peptide_mapping_visualization_files/figure-markdown_github/unnamed-chunk-6-1.png)
+![](unnamed-chunk-6-1.png)
