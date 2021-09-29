@@ -6,54 +6,11 @@ Tool to show protein coverage across different samples/condition, using the Maxq
 ![](unnamed-chunk-6-1.png)
 ``` r
 library(tidyverse)
-```
 
-    ## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──
-
-    ## ✓ ggplot2 3.3.3     ✓ purrr   0.3.4
-    ## ✓ tibble  3.1.4     ✓ dplyr   1.0.7
-    ## ✓ tidyr   1.1.3     ✓ stringr 1.4.0
-    ## ✓ readr   2.0.1     ✓ forcats 0.5.1
-
-    ## Warning: package 'stringr' was built under R version 3.5.2
-
-    ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-    ## x dplyr::filter() masks stats::filter()
-    ## x dplyr::lag()    masks stats::lag()
-
-``` r
-library(reshape2)
-```
-
-    ## 
-    ## Attaching package: 'reshape2'
-
-    ## The following object is masked from 'package:tidyr':
-    ## 
-    ##     smiths
-
-``` r
 library(scales)
-```
 
-    ## 
-    ## Attaching package: 'scales'
-
-    ## The following object is masked from 'package:purrr':
-    ## 
-    ##     discard
-
-    ## The following object is masked from 'package:readr':
-    ## 
-    ##     col_factor
-
-``` r
 library(splitstackshape)
-```
 
-    ## Warning: package 'splitstackshape' was built under R version 3.5.2
-
-``` r
 peptides<- as.data.frame(read.delim("peptides.txt", sep="\t",header=TRUE))
 
 names(peptides)
